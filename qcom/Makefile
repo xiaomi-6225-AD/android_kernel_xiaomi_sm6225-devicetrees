@@ -417,5 +417,5 @@ dtb-y += $(sdxbaagha-dtb-y)
 
 always-y        := $(dtb-y)
 subdir-y        := $(dts-dirs)
-subdir-y	+= audio bt camera display graphics nfc video
+subdir-y	+= audio bt camera display graphics nfc video wlan
 clean-files     := *.dtb *.dtbo
