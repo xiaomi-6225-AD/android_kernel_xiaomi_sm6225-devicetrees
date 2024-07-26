@@ -328,23 +328,6 @@
        	};
 };
 
-&tlmm {
-/* sc8551-charger */
-	sc8551_int_default: sc8551_int_default {
-			mux {
-				pins = "gpio84";
-				function = "gpio";
-			};
-			
-			config {
-				pins = "gpio84";
-				drive-strength = <2>;
-				bias-pull-up;
-				input-enable;
-			};
-		};
-};
-
 &qupv3_se1_i2c {
 	status = "ok";
 	#address-cells = <1>;
