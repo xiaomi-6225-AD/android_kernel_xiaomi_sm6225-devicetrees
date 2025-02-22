@@ -33,6 +33,16 @@
 				qcom,pull-up = <1>;
 				linux,code = <KEY_VOLUMEDOWN>;
 			};
+
+			qcom,pon_3 {
+				qcom,pon-type = <PON_POWER_ON_TYPE_KPDPWR_RESIN>;
+				qcom,pull-up = <1>;
+				qcom,support-reset = <1>;
+				qcom,s1-timer = <4480>;
+				qcom,s2-timer = <1000>;
+				qcom,s2-type = <1>;
+				qcom,use-bark;
+			};
 		};
 
 		pm6125_vadc: vadc@3100 {
@@ -132,7 +142,7 @@
 		#size-cells = <0>;
 
 		pm6125_pwm: qcom,pwms@b300 {
-			status = "disabled";
+			status = "okay";
 			compatible = "qcom,pwm-lpg";
 			reg = <0xb300>;
 			reg-names = "lpg-base";

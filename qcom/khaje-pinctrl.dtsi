@@ -106,4 +106,38 @@
 				};
 			};
 		};
+
+		ant-check-pin {
+			ant_check_default: ant_check_default {
+				mux {
+					pins = "gpio107";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio107";
+					drive-strength = <0x02>;
+					bias-pull-up;
+					input-enable;
+					input-debounce = <0x1388>;
+				};
+			};
+		};
+
+		ant-check-div-pin {
+			ant_check_div_default: ant_check_div_default {
+				mux {
+					pins = "gpio25";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio25";
+					bias-pull-up;
+					input-enable;
+					input-debounce = <0x1388>;
+				};
+			};
+		};
+
 };
